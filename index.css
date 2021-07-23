@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 /* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--very-light-grey);
+
+  /* Temp styling */
+  /* width: 375px; */
+}
+
 :root {
   --dark-cyan: hsl(184, 100%, 22%);
   --very-dark-cyan: hsl(179, 100%, 13%);
@@ -17,9 +26,72 @@ p {
 
 h1 {
   font-family: "Big Shoulders Display", cursive;
+  color: var(--very-light-grey);
+  text-transform: uppercase;
 }
 
 /* Card Styling */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5.4em 1.5em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 3.125em;
+}
+
+.card--orange {
+  background: var(--bright-orange);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card--orange button {
+  color: var(--bright-orange);
+}
+
+.card--dark-cyan {
+  background: var(--dark-cyan);
+}
+
+.card--dark-cyan button {
+  color: var(--dark-cyan);
+}
+
+.card--very-dark-cyan {
+  background: var(--very-dark-cyan);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card--very-dark-cyan button {
+  color: var(--very-dark-cyan);
+}
+
+.card img {
+  height: 2.5em;
+  width: 4em;
+}
+
+.card h1 {
+  font-size: 2.125rem;
+  margin: 1.17em 0;
+}
+
+.card p {
+  margin: 0 0 1.75em;
+  line-height: 2rem;
+}
+
+.card-button {
+  height: 3.125em;
+  width: 9rem;
+  border-radius: 30px;
+  border: none;
+}
 
 /* Attribution Styling */
 .attribution {
