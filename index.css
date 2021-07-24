@@ -31,7 +31,7 @@ h1 {
 .card-container {
   display: flex;
   flex-direction: column;
-  padding: 5.4em 1.5em;
+  margin: 5.4em 1.5em;
 }
 
 .card {
@@ -118,24 +118,40 @@ h1 {
 
 @media (min-width: 786px) {
   .card-container {
-    padding: 5.4em 4em;
+    margin: 5.4em 4em;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 930px) {
   .card-container {
-    padding: 5.4em 6.5em;
+    margin: 5.4em 6.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    flex-direction: row;
+    margin: 5.4em 1.5em;
+  }
+
+  .card {
+    padding: 3.125em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    margin: 5.4em 1.5em;
   }
 }
 
 @media (min-width: 1440px) {
   .card-container {
-    flex-direction: row;
-    padding: 171px 16.25em;
+    margin: 171px 15.6em;
   }
 
   .card {
-    padding: 3.125em;
+    padding: 3.25em;
   }
 
   .card--orange {
